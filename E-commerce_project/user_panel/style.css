@@ -1,0 +1,161 @@
+ *{
+        box-sizing: border-box;
+    }
+    /* Float four columns side by side */
+    .column
+    {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin-top: 1vw;
+    }
+    /* Remove extra left and right margins ,due to padding */
+    .row 
+    {
+        margin: 0 -5px;
+    /*  margin-bottom: 10px;*/
+    }
+    /* Clear floats after the column */
+    .row:after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Responsive columns */
+    @media screen and (max-width:  700px)
+    {
+        .column {
+            width: 40%;
+            display: block;
+            margin-bottom: 1vw;
+        }
+    }
+    /* Style the counter card */
+    .card
+    {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 1vw;
+        text-align: center;
+        background-color: #f1f1f1;
+        /*height: 58vh;*/
+        /*height: auto;
+        width: auto;*/
+    }
+    .image
+    {
+        width: 70%;
+        height: auto;
+    }
+    .title
+    {
+        padding: 10px 0;
+        height: 10vh;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1vw;
+    }
+    .addtocard
+    {
+            border: none;
+            outline: 0;
+            padding: 1vw;
+            color: white;
+            background-color: purple;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1vw;
+            margin-bottom: 0.4vw;
+    }
+    .addtocard:hover
+    {
+         opacity: 0.7;
+    }
+    .price s{
+        color: gray;
+        font-size: 1vw;
+    }
+    .price{
+        font-size: 1.1vw;
+    }
+    .text
+    {
+        text-align: center;
+        padding: 10px 14px;
+        font-weight: bold;
+        font-size: 1.5vw;
+        background-color:black;
+        color: white;
+        margin-bottom: 1vw;
+        width: 100%;
+    }
+    .slide
+    {
+        background-color: lightgoldenrodyellow;
+        margin:  auto;
+        padding: 1vw;
+        width: 80%;
+        box-shadow: 0 4px 4px 0 brown;
+    }
+    .slide img
+    {
+        width: 80%;
+        height: auto;
+        padding: 1.2vw;
+    }
+    .slide p 
+    {
+        font-size: 1.5vw;
+        color: black;
+    }
+    .out_of_stock
+    {
+        outline: 0;
+        padding: 1vw;
+        color: black;
+        text-align: center;
+        width: 100%;
+        font-size: 1vw;
+        margin-bottom: 0.4vw;
+        opacity: 0.5;
+    }
+    .wish
+    {
+        visibility: hidden;
+    }
+    .card:hover .wish
+    {
+        visibility: visible;
+    }
+    .container .Start-shopping
+        {
+            box-sizing: border-box;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 320px;
+            height: 200px;
+            padding: 60px 25px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 3px 3px 4px red;
+        }
+        .container .Start-shopping .empty-cart
+        {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .container .Start-shopping .bstart .start
+        {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: purple;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        
+}
